@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Salão de Beleza</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Gabriela Maciel"/>
+    <meta name="keywords" content="Salão de beleza, Fazer escova e pintar, Fazer sobrancelha,"/>
+    <meta name="description" content="Salão de beleza perto do abatedouro quase todos os dias, exceto Segunda-feira" />
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="banner.png" alt="banner acompanhando a logo de um Salão de beleza" />
+  </header>
+  <nav>
+     <a class="a-Menu" href="index.html">HOME</a>
+     <a class="a-Menu" href="index.html#pag-Benefícios"> BENEFÍCIOS</a>
+     <a class="a-Menu" href="index.html#pag-Fotos"> FOTOS</a>
+     <a class="a-Menu" href="index.html#pag-Contato"> CONTATO</a>
+     <a class="a-Menu" href="#"> AGENDAMENTO</a>
+  </nav>
+
+  <section id="pag-agendamento">
+    <h1>Agendamento</h1>
+  
+    <p>Agende aqui seus dias e horários!</p>
+
+    <form name="" method="" action="">
+        <label for="nome">Nome:</label>
+        <input id="nome" type="text" name="nome" placeholder="Digite seu Nome Completo" required />
+
+        <label for="Email"> E-mail:</label>
+        <input id="Email" type="Email" name="Email" placeholder="nomedousuario@gmail.com">
+        
+
+        <label for="Senha">Senha:</label>
+        <input id="Senha" type="password" name="Senha" placeholder="somente números">
+        
+
+        <label for="Celular">Celular:</label>
+        <input id="Celular" type="Tel" name="Celular" placeholder="(99)99999-9999"
+         pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$" >
+
+         <div id="data-hora">
+         <div>
+          <label id="Data">Data:</label>
+          <input id="Data" type="Date" name="Data"/>
+       </div>
+
+         <div>
+          <label id="Hora">Hora:</label>
+          <input id="Hora" type="Time" name="Hora"/>
+         </div>
+
+       </div>
+         <fieldset>
+            <legend>Gênero:</legend>
+          <input id="masc" type="radio" name="genero" value="masc"/> </label for="masc"
+          >Masculino</label><br/>
+          <input id="fem" type="radio" name="genero" value="fem"/> </label for="fem">Femimino</label>
+         </fieldset>
+
+         <label for="msg">Mensagem:</label><br/>
+         <textarea id="msg" cols="52" rows="5">
+         </textarea>
+
+         <div id="botões-form">
+          <input type="submit" name="bnt-Agendar" value="AGENDAR" />
+          <input type="reset" name="btn-Cancelar" value="CANCELAR" />
+         </div>
+    </form>
+  </section>
+    <footer>
+    <p>Desenvolvida pela <a href="http://instagram.com/gabimaciel89"
+     target="_blank">Gabriela Maciel</a>-2023</p>  
+    </footer> 
+ </body>
+</html>
